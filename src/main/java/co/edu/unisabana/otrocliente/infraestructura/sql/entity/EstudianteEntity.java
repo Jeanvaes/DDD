@@ -7,7 +7,6 @@ import javax.persistence.Id;
 public class EstudianteEntity {
 
   private Long id;
-
   private String nombre;
   private String facultad;
 
@@ -26,6 +25,22 @@ public class EstudianteEntity {
 
   public EstudianteEntity(String nombre, String facultad) {
     this.nombre = nombre;
+    this.facultad = facultad;
+  }
+
+  public String getNombre() {
+    return nombre;
+  }
+
+  public void setNombre(String nombre) {
+    this.nombre = nombre;
+  }
+
+  public String getFacultad() {
+    return facultad;
+  }
+
+  public void setFacultad(String facultad) {
     this.facultad = facultad;
   }
 }
